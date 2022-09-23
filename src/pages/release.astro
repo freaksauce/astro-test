@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro'
+const { frontmatter } = Astro.props
+console.log('frontmatter: ', frontmatter)
+---
+
+<Layout title={`Chroma Release v${frontmatter.title}`}>
+  <slot />
+</Layout>
